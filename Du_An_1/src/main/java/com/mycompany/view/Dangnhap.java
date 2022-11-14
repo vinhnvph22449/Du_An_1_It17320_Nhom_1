@@ -197,10 +197,10 @@ public class Dangnhap extends javax.swing.JFrame {
 //                    hp.setVisible(true);
 //                    this.dispose();
 //                }
-            }
-
-        } catch (Exception e) {
-        }
+//            }
+//
+//        } catch (Exception e) {
+//        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
