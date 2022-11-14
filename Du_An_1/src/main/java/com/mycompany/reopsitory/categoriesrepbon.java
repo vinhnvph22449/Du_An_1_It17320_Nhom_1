@@ -28,6 +28,9 @@ public class categoriesrepbon {
         return list;
     }
 
+    
+    
+    
     public Boolean add(categoriesrepbon cate) {
         try {
             sseion.getTransaction().begin();
@@ -60,7 +63,7 @@ public class categoriesrepbon {
             cate1.setCode(cate.getCode());
             cate1.setCategoryName(cate.getCategoryName());
             sseion.getTransaction().begin();
-            sseion.delete(sseion.get(categories.class, id));
+            sseion.save(cate1);
             sseion.getTransaction().commit();
             sseion.close();
             return true;
